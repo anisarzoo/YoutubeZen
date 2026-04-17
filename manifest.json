@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Focus Mode",
-  "version": "1.0",
-  "description": "Remove distractions from YouTube: hide comments, sidebar, shorts, and more.",
+  "name": "YouTube Zen",
+  "version": "1.1",
+  "description": "Conquer the algorithm with a minimalist, distraction-free YouTube experience.",
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html",
