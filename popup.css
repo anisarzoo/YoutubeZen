@@ -166,25 +166,88 @@ input:checked + .slider:before {
 }
 
 footer {
-  margin-top: 32px;
+  margin-top: 24px;
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid #171717;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .status-note {
   font-size: 11px;
   color: var(--text-muted);
-  margin: 0 0 10px 0;
+  margin: 0;
   font-style: normal;
 }
 
+.support-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+}
+
+.coffee-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffdd00;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.coffee-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 221, 0, 0.3);
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.qr-container:hover {
+  opacity: 1;
+}
+
+.qr-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.qr-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background: white;
+  padding: 4px;
+}
+
 .motto {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-main);
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  opacity: 0.7;
+  opacity: 0.4;
 }
