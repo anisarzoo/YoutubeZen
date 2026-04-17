@@ -1,0 +1,71 @@
+/* Comment Hiding */
+html.yt-focus-hide-comments #comments {
+    display: none !important;
+}
+
+/* Sidebar Hiding */
+html.yt-focus-hide-sidebar #secondary,
+html.yt-focus-hide-sidebar ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+/* Shorts Hiding - Comprehensive */
+/* Sidebar/Guide entries */
+html.yt-focus-hide-shorts ytd-guide-entry-renderer[line-extension-id="shorts"],
+html.yt-focus-hide-shorts ytd-guide-entry-renderer:has(a[href*="/shorts"]),
+html.yt-focus-hide-shorts ytd-mini-guide-entry-renderer:has(a[href*="/shorts"]),
+html.yt-focus-hide-shorts ytd-guide-entry-renderer:has(path[d*="L10 14.65v-9.3L17.5 10l-7.5 4.65Z"]),
+html.yt-focus-hide-shorts a[title="Shorts"],
+html.yt-focus-hide-shorts a[href*="/shorts"],
+/* Home page sections */
+html.yt-focus-hide-shorts ytd-rich-shelf-renderer[is-shorts],
+html.yt-focus-hide-shorts ytd-reel-shelf-renderer,
+/* Individual items in search or recommendations */
+html.yt-focus-hide-shorts ytd-rich-item-renderer:has(a[href*="/shorts/"]),
+html.yt-focus-hide-shorts ytd-video-renderer:has(a[href*="/shorts/"]),
+/* The shorts player itself if reached directly */
+html.yt-focus-hide-shorts ytd-shorts {
+    display: none !important;
+}
+
+/* Ads Hiding - Comprehensive */
+html.yt-focus-hide-ads #masthead-ad,
+html.yt-focus-hide-ads ytd-ad-slot-renderer,
+html.yt-focus-hide-ads ytd-promoted-sparkles-web-renderer,
+html.yt-focus-hide-ads ytd-display-ad-renderer,
+html.yt-focus-hide-ads ytd-statement-banner-renderer,
+html.yt-focus-hide-ads .ytd-ad-slot-renderer,
+html.yt-focus-hide-ads .ytp-ad-overlay-container,
+html.yt-focus-hide-ads .ytp-ad-module,
+html.yt-focus-hide-ads .ytp-ad-image-overlay,
+html.yt-focus-hide-ads .ytp-ad-player-overlay,
+html.yt-focus-hide-ads .ytp-ad-message-container,
+html.yt-focus-hide-ads ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
+html.yt-focus-hide-ads ytd-rich-item-renderer:has(#ad-badge),
+html.yt-focus-hide-ads ytd-video-renderer:has(.badge-style-type-ad),
+html.yt-focus-hide-ads ytd-promoted-video-renderer,
+html.yt-focus-hide-ads ytd-rich-item-renderer:has(.badge-style-type-ad) {
+    display: none !important;
+}
+
+/* Description Hiding */
+html.yt-focus-hide-description #description,
+html.yt-focus-hide-description #description-inner,
+html.yt-focus-hide-description ytd-expandable-video-description-body-renderer {
+    display: none !important;
+}
+
+/* End Screen Hiding */
+html.yt-focus-hide-endscreen .html5-endscreen,
+html.yt-focus-hide-endscreen .ytp-ce-element,
+html.yt-focus-hide-endscreen .ytp-endscreen-content {
+    display: none !important;
+}
+
+/* Layout Adjustments */
+html.yt-focus-hide-sidebar ytd-watch-flexy[flexy] #primary.ytd-watch-flexy {
+    max-width: 90% !important;
+    padding-right: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}

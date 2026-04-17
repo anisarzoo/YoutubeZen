@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Focus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-area">
+        <img src="icons/icon48.png" alt="Logo" class="logo">
+        <h1>YouTube Focus</h1>
+      </div>
+      <p class="subtitle">Personalize your experience</p>
+    </header>
+
+    <main>
+      <div class="toggle-group">
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide Comments</span>
+            <span class="description">Remove the comment section</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideComments">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide Sidebar</span>
+            <span class="description">Hide recommendations sidebar</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideSidebar">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide Shorts</span>
+            <span class="description">Block YouTube Shorts everywhere</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideShorts">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide Ads</span>
+            <span class="description">Hide sponsored posts and ads</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideAds">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide Description</span>
+            <span class="description">Hide the video description box</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideDescription">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-item">
+          <div class="info">
+            <span class="label">Hide End Screen</span>
+            <span class="description">No video suggestions at end</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="hideEndScreen">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="status-note">Refresh YouTube pages to ensure all changes take full effect.</p>
+      <p class="motto">Stay focused, stay productive.</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
